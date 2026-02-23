@@ -28,7 +28,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* --- HERO SEKCE --- */
+  /* HERO - LADĚNÉ MEZERY */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -63,55 +63,56 @@
 
   .btn-primary:hover { background: var(--gold); color: var(--black); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(201, 168, 76, 0.15); }
 
-  /* --- SECTIONS --- */
+  /* SECTIONS */
   section { padding: 120px 24px; max-width: 900px; margin: 0 auto; }
   .section-label { font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 50px; display: flex; align-items: center; gap: 20px; }
   .section-label::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, rgba(201,168,76,0.3), transparent); max-width: 80px; }
 
-  /* --- STORY --- */
+  /* STORY */
   .story { border-left: 1px solid rgba(201,168,76,0.3); padding-left: 48px; }
   .story p { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2.5vw, 28px); margin-bottom: 28px; }
 
-  /* --- FORMAT GRID --- */
+  /* FORMAT GRID */
   .format-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(201,168,76,0.15); margin-top: 48px; }
   .format-item { background: var(--black); padding: 60px 32px; text-align: center; }
   .format-number { font-family: 'Cormorant Garamond', serif; font-size: 52px; color: var(--gold); opacity: 0.6; line-height: 1; }
   .format-desc { font-size: 15px; color: var(--text-muted); margin-top: 10px; }
 
-  /* --- PRICE --- */
+  /* PRICE - VYVÁŽENÉ */
   .price-block { text-align: center; padding: 100px 24px; border: 1px solid rgba(201,168,76,0.15); background: radial-gradient(ellipse at center, #1a1408 0%, var(--black) 70%); }
   .price-amount { font-family: 'Cormorant Garamond', serif; font-size: clamp(60px, 10vw, 100px); color: var(--gold); display: flex; justify-content: center; align-items: baseline; gap: 15px; }
   .price-currency { font-size: 0.5em; }
 
-  /* --- ABOUT SEKCE (TVŮJ KOMPLETNÍ TEXT) --- */
-  .about-container { display: flex; flex-direction: column; gap: 40px; }
-  .about-header { display: flex; align-items: flex-start; gap: 40px; }
-  .about-image { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 1px solid var(--gold); filter: grayscale(10%); flex-shrink: 0; }
-  .about-intro-text { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; line-height: 1.5; color: var(--cream); font-style: italic; }
-  
-  .about-main-text { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; margin-top: 20px; }
-  .about-bio p { margin-bottom: 24px; color: var(--text-muted); font-size: 16px; }
-  .about-bio strong { color: var(--gold-light); font-weight: 400; }
-  
-  .credentials { border-left: 1px solid rgba(201,168,76,0.2); padding-left: 35px; }
-  .credentials h3 { font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
-  .credential-item { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; color: var(--text-muted); line-height: 1.4; }
-
-  /* --- AREAS, TESTIMONIALS, FAQ --- */
+  /* AREAS */
   .area-item { display: grid; grid-template-columns: 80px 1fr; gap: 32px; padding: 50px 0; border-bottom: 1px solid rgba(201,168,76,0.1); }
   .area-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; color: rgba(201,168,76,0.25); }
   .area-content h3 { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 
+  /* FOR WHO */
   .for-who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 48px; }
   .for-who-col h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(201,168,76,0.15); padding-bottom: 16px;}
+  .for-who-col ul { list-style: none; }
   .for-who-col ul li { font-size: 15px; color: var(--text-muted); padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.04); position: relative; padding-left: 25px; }
   .for-who-col ul li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
 
+  /* TESTIMONIALS */
   .testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
   .testimonial { padding: 48px; border: 1px solid rgba(201,168,76,0.1); background: rgba(255,255,255,0.01); }
   .testimonial p { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-style: italic; color: rgba(245,240,232,0.9); margin-bottom: 24px; }
   .testimonial-name { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); }
 
+  /* ABOUT - PODLE TVÉHO NÁVRHU */
+  .about-container { display: flex; flex-direction: column; gap: 40px; }
+  .about-header { display: flex; align-items: flex-start; gap: 40px; }
+  .about-image { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 1px solid var(--gold); filter: grayscale(10%); flex-shrink: 0; }
+  .about-intro-text { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; line-height: 1.5; color: var(--cream); font-style: italic; }
+  .about-main-text { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; margin-top: 20px; }
+  .about-bio p { margin-bottom: 24px; color: var(--text-muted); font-size: 16px; }
+  .credentials { border-left: 1px solid rgba(201,168,76,0.2); padding-left: 35px; }
+  .credentials h3 { font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .credential-item { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; color: var(--text-muted); line-height: 1.4; }
+
+  /* FAQ */
   .faq-item { padding: 32px 0; border-bottom: 1px solid rgba(201,168,76,0.1); }
   .faq-q { font-size: 17px; font-weight: 500; color: var(--gold-light); margin-bottom: 12px; }
   .faq-a { font-size: 16px; color: var(--text-muted); }
@@ -121,7 +122,6 @@
   @media (max-width: 768px) {
     .format-grid, .for-who-grid, .testimonials, .about-main-text { grid-template-columns: 1fr; }
     .about-header { flex-direction: column; align-items: center; text-align: center; }
-    .about-main-text { gap: 40px; }
     .area-item { grid-template-columns: 60px 1fr; }
   }
 </style>
@@ -176,6 +176,75 @@
   </div>
 </section>
 
+<section>
+  <div class="section-label">Na čem pracujeme</div>
+  <div class="areas">
+    <div class="area-item">
+      <div class="area-num">01</div>
+      <div class="area-content">
+        <h3>Pochop své emoční vzorce</h3>
+        <p>Proč jíš, když nejsi hladová? Odkud se bere ten hlad po čokoládě večer? Společně objevíme, co ti tvoje tělo říká — a jak mu odpovědět jinak než jídlem.</p>
+      </div>
+    </div>
+    <div class="area-item">
+      <div class="area-num">02</div>
+      <div class="area-content">
+        <h3>Uklidni nervový systém</h3>
+        <p>Tvoje tělo si pamatuje každý stres, každý spěch, každé "nestíhám". Naučíš se, jak se vrátit do klidu — a přestat hledat úlevu v jídle.</p>
+      </div>
+    </div>
+    <div class="area-item">
+      <div class="area-num">03</div>
+      <div class="area-content">
+        <h3>Najdi svůj rytmus</h3>
+        <p>Žádná pravidla. Žádné "musíš jíst 5× denně". Objevíš, co funguje pro tvoje tělo, tvůj život, tvůj rozvrh. Reálně. Udržitelně.</p>
+      </div>
+    </div>
+    <div class="area-item">
+      <div class="area-num">04</div>
+      <div class="area-content">
+        <h3>Ukonči boj s tělem</h3>
+        <p>Přestaň bojovat. Přestaň se trestat. Místo toho se nauč své tělo respektovat — a ono ti to vrátí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Pro koho to je</div>
+  <div class="for-who-grid">
+    <div class="for-who-col yes">
+      <h3>Tahle spolupráce je pro tebe, pokud…</h3>
+      <ul>
+        <li>Jsi unavená z diet, které nikdy nedodržíš</li>
+        <li>Chceš změnu, ale nechceš se trápit</li>
+        <li>Pracuješ, studuješ, žiješ naplno — a potřebuješ něco, co sedne do tvého života</li>
+        <li>Víš, co bys měla jíst, ale stejně to neděláš</li>
+        <li>Večer sedíš s čokoládou a cítíš se jako selhání</li>
+        <li>Jsi připravená na cestu, ne na rychlý fix</li>
+      </ul>
+    </div>
+    <div class="for-who-col no">
+      <h3>Není to pro tebe, pokud…</h3>
+      <ul>
+        <li>Teď hledáš přesný jídelníček a pravidla "co smíš a nesmíš"</li>
+        <li>Chceš rychlý výsledek za 14 dní a potom zpět do starého režimu</li>
+        <li>Jsi v akutní fázi poruchy příjmu potravy a potřebuješ intenzivní odbornou péči</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Co říkají klientky</div>
+  <div class="testimonials">
+    <div class="testimonial"><p>Nakoplo mě to ve všech ohledech. Líbí se mi, že věří, že není pozdě na změnu.</p><div class="testimonial-name">Daniela</div></div>
+    <div class="testimonial"><p>Poprvé jsem rozeznala, kdy je to hlad a kdy jen tlak a únava. A přestala jsem se obviňovat po každém večeru.</p><div class="testimonial-name">Pavla</div></div>
+    <div class="testimonial"><p>Kateřina je hrozně inspirativní ženská a mám ráda její humor, který do setkání vnáší.</p><div class="testimonial-name">Renata</div></div>
+    <div class="testimonial"><p>Přestala jsem čekat na "až zhubnu". Začala jsem žít už během spolupráce.</p><div class="testimonial-name">Maruška</div></div>
+  </div>
+</section>
+
 <section id="o-mne">
   <div class="section-label">O Kateřině</div>
   <div class="about-container">
@@ -185,7 +254,6 @@
         „Dlouho jsem bojovala s jídlem. Přejídala jsem se a nevěděla proč. Dnes jsem v pohodě – a pomáhám ženám najít stejný klid.“
       </div>
     </div>
-
     <div class="about-main-text">
       <div class="about-bio">
         <p>Je mi 45 (ano, taky se divím).</p>
@@ -214,7 +282,25 @@
     <div class="faq-q">Kolik to stojí?</div>
     <div class="faq-a">8 000 Kč za celý 3měsíční program. Platba předem nebo po dohodě ve splátkách.</div>
   </div>
+  <div class="faq-item">
+    <div class="faq-q">Je to dieta?</div>
+    <div class="faq-a">Ne. Je to cesta k tomu, jak žít s jídlem v pohodě. Bez pravidel, bez viny. Pokud posloucháš mé podcasty, víš, že na diety nevěřím — osobní zkušenost 25 let.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak začít?</div>
+    <div class="faq-a">Rezervuj si bezplatnou 30minutovou úvodní konzultaci přes tlačítko níže. Vzájemně se poznáme a zjistíme, jestli má spolupráce smysl.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kolik míst je k dispozici?</div>
+    <div class="faq-a">Přijímám 3 klientky. Jakmile jsou místa obsazena, další zájemkyně zařadím na čekací listinu.</div>
+  </div>
 </section>
+
+<div class="cta-final" style="text-align: center; padding: 120px 24px;">
+  <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 64px); margin-bottom: 16px;">Přestaň bojovat.<br><em style="color: var(--gold);">Začni jinak.</em></h2>
+  <p style="margin-bottom: 48px; color: var(--text-muted);">Úvodní konzultace je zdarma a nezávazná. Poznáme se a zjistíme, jestli to dává smysl.</p>
+  <a href="https://tidycal.com/heallocz/seznameni" class="btn-primary" target="_blank">Rezervovat úvodní konzultaci zdarma</a>
+</div>
 
 <footer>HEALLO® · Kateřina · katerina@myheallo.info</footer>
 
